@@ -1,0 +1,93 @@
+/* Changed the background color of page to a gradient*/
+body {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    font-family: 'Instrument Serif', serif;
+}    /* Created Box Model/border #1 with shorthand syntax*/
+.box {
+    border: 2px solid #B5FFFC;
+    position: static;
+    padding: 10px 20px 10px 20px;
+    margin: 20px 20px 20px 20px;
+    width: 600px;
+    height: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+/* Created Box Model/border #2 with longhand syntax*/
+.box2 {
+    text-align: center;
+    position: relative;
+    border: 2px solid #B5FFFC;
+    border-radius: 2rem; 
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    padding-left: 1ex;
+    padding-right: 1ex;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-left: .5in;
+    margin-right: .5in;
+    width: 10cm;
+    min-width: none;
+    height: 1cm;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.flex-container{
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+#brainstorming {
+    text-align: center; 
+    display: inline-block;
+}
+/* Make all text bold*/ 
+* {
+    font-weight: 1000; 
+}
+header.thick {
+    font-weight: bold; 
+}
+main h1 {
+    text-decoration: underline;
+}
+
+button2:active {
+    background-color: #3e8e41; /* Darker green */
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+p ~ span {
+   text-decoration: underline;
+}
+
+/* Modifies the text style of link to other part of the site */ 
+a[href^="#"] {
+    color : red; 
+}
+
+h3.box2 {
+    text-decoration:underline;
+}
+
+ol > li {
+    display: block; 
+}
+  
+/* Style for screen of max-width: 900px */
+@media (max-width: 900px) {
+    body {
+        font-size: 16px;
+      }
+      
+      .content {
+        margin: auto;
+      }
+}
+
+
+
+  
+
