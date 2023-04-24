@@ -39,6 +39,13 @@ body {
     align-items: center;
 }
 
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: space-evenly; 
+    padding: 20px;
+}
 #brainstorming {
     text-align: center; 
     display: inline-block;
@@ -68,6 +75,9 @@ a[href^="#"] {
     color : red; 
 }
 
+h6 {
+    display: grid;
+}
 h3.box2 {
     text-decoration:underline;
 }
@@ -86,8 +96,4 @@ ol > li {
         margin: auto;
       }
 }
-
-
-
-  
 

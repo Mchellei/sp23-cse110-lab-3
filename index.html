@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="mystyles.css" /> 
     <title>Meeting Minutes</title>
     <link rel="icon" type="image/png" href="1f389.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header> 
-        <div>Agenda</div>
+    <header  class ="thick"> 
+      <style>
+        .button {
+          padding: 0.5em 1em;
+          font-size: 1.125rem;
+          border-radius: 0.6em;
+          background-color: #B28FCE;
+          font-weight: bold;
+          border: 1px solid transparent;
+          transition: background-color 200ms ease-in-out;
+        }
+        
+        @media (hover: hover) {
+          .button:hover {
+            background-color: hotpink;
+            content: "Thank you for hovering!";
+          }
+        }
+      </style>
+      <button class="button">Change my color!</button>
+      <style>
+        .button2 {
+          padding: 0.5em 1em;
+          font-size: 1.125rem;
+          border-radius: 0.6em;
+          background-color: #B28FCE;
+          font-weight: bold;
+          border: 1px solid transparent;
+          transition: background-color 200ms ease-in-out;
+        }
+        
+        @media (hover: hover) {
+          .button2:active {
+            background-color: hotpink;
+          }
+        }
+      </style>
+      <button class="button2">Click on me!</button>
+      
+        <div class="box"> Agenda
         <nav>
         <ul>
         <li><a href="#Check-Ins">Check-Ins</a></li>
@@ -16,12 +59,14 @@
         <li><a href="#Documentation">Documentation</a></li>
         </ul>
         </nav>
+      </div>
     </header>
-    <main>
+    <main class="flex-container">
         <h1>SE's Meeting Minutes</h1>
-        <h2>April 16, 2023 / 11:00 AM</h2>
+        <!-- Italicized/changed color of the time stamp to emphasize it using inline CSS-->
+        <h2 style="color: blue; font-style: italic; font-weight: bold;">April 16, 2023 / 11:00 AM</h2>
         <section>
-        <h3>Attendance List</h3>
+        <h3 class="box2">Attendance List</h3>
             <ol>
             <li>John Doe</li>
             <li>Sally Smith</li>
@@ -30,9 +75,17 @@
             </ol>
         </section>
 
-        <section>
-        <h3>Check-Ins</h3>
+        <section class="flex-item">
+        <h3 class="box2" >Check-Ins</h3>
+        <!-- Changed the style of the paragraphs using <style> element -->
+        <style>
+          p {
+            color: hsl(190, 100%, 32%); 
+            font-size: 18px;
+          }
+        </style>
         <p>
+          
             <span>The purpopse of this meeting</span> is to finish the ice-breaking activities from our last meetings, further
           breaking the ice between the team members. We will also finish the discussion regarding the current project, 
           as well as answering remaining questions from last meeting.<br> 
@@ -43,8 +96,8 @@
         </p>
         </section>
 
-        <section>
-        <h3>Brainstorming</h3>
+        <section class="flex-item">
+        <h3 id="brainstorming">Brainstorming</h3>
         <p>
             Team members came up with more <b>concrete steps</b> that the team should follow to keep to deadline. Team members brought up that we could work harder 
             on the creativity part of the project. 
@@ -58,7 +111,7 @@
         
         </section>
 
-        <section>
+        <section class=""flex-item">
         <h3>Documentation</h3>
         <p><i>Video of the meeting from a fellow team member: </i>
         </p>
